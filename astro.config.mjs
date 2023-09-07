@@ -31,6 +31,5 @@ export default defineConfig({
       entrypoint: 'astro/assets/services/sharp'
     }
   },
-  output: "server",
   adapter: netlify()
 });
