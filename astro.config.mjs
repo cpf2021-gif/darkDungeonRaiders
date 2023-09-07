@@ -2,6 +2,7 @@ import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
 import netlify from "@astrojs/netlify/functions";
+import vercel from "@astrojs/vercel/serverless";
 
 // https://astro.build/config
 export default defineConfig({
@@ -31,5 +32,8 @@ export default defineConfig({
       entrypoint: 'astro/assets/services/sharp'
     }
   },
-  adapter: netlify()
+  adapter: [
+    netlify(),
+    vercel(),
+  ],
 });
