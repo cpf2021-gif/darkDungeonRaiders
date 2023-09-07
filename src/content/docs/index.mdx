@@ -1,0 +1,39 @@
+---
+title: Dark Dungeon Raiders
+description: A game about exploring dungeons and fighting monsters.
+template: splash
+hero:
+  tagline: Help you get started with the game better
+  image:
+    file: ../../assets/Logo.webp
+  actions:
+    - text: Get Started 
+      link: /about/introduction/
+      icon: right-arrow
+      variant: primary
+    - text: Official Website
+      link: https://www.darkestdungeon.com/darkest-dungeon/
+      icon: external
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+import  About  from '../../components/about.astro'
+
+## Introduction
+
+<CardGrid stagger>
+	<Card title="物品互动" icon="approve-check-circle">
+		不赌, 只介绍一定有正面效果的物品
+	</Card>
+	<Card title="角色介绍" icon="add-document">
+		介绍角色的特性, 技能, 饰品, 以及阵容搭配	
+	</Card>
+	<Card title="副本介绍" icon="list-format">
+		介绍副本的特性, 怪物
+	</Card>
+	<Card title="Boss打法" icon="open-book">
+		介绍Boss的特性, 打法, 以及阵容搭配
+	</Card>
+</CardGrid>
+
+<About title={"Brought to you by"} />
