@@ -16,12 +16,20 @@ export default defineConfig({
         lang: 'zh-CN'
       }
     },
-    sidebar: [{
-      label: '介绍',
-      autogenerate: {
-        directory: 'about'
-      }
-    }],
+    sidebar: [
+      {
+        label: '介绍',
+        autogenerate: {
+          directory: 'about'
+        }
+      },
+      {
+        label: '物品互动',
+        autogenerate: {
+          directory: 'interaction'
+        }
+      },
+    ],
     lastUpdated: true,
     pagination: true
   })],
